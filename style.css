@@ -1,0 +1,85 @@
+p {
+  margin: 0;
+}
+
+* {
+  font-family: PT Sans;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.project {
+  font-weight: 600;
+}
+
+.container {
+  width: 8.5in;
+  padding: 0.5in 0 0.5in 0.5in;
+}
+
+.section {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: stretch;
+  width: 7.5in;
+  flex-direction: column;
+}
+
+.page {
+  height: 12in;
+}
+
+.section-header {
+  border-bottom: 2px solid #ccc;
+}
+
+.section-header p {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Open Sans;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 5px;
+}
+
+.row-name {
+  flex: 1;
+}
+
+.section-row p {
+  display: flex;
+  flex: 3;
+}
+
+.experience-name {
+  font-size: 16px;
+}
+
+.experience-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-row p:first-of-type {
+  max-width: 60%;
+}
+
+.experience-description {
+  padding-left: .1in;
+}
+
+.used {
+  padding-left: .1in;
+}
+
+.experience-contents {
+  padding: 0 0 10px .25in;
+}
