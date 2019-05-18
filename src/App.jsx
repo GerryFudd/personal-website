@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="./style.css" rel="stylesheet" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div class="container">
+import React, {Component} from 'react';
+
+const App = () => (
+  <div class="container">
 			<div class="page">
 				<div class="section">
 					<div class="section-header">
@@ -304,5 +299,6 @@
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+);
+
+export default App;
