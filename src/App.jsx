@@ -15,7 +15,7 @@ const App = () => (
 						<p>davehasen@gmail.com</p>
 						<p>github.com/gerryfudd</p>
 						<p>www.linkedin.com/in/david-hasenjaeger</p>
-						<p>Full stack developer with three years of experience working in an agile development model either on the front end with React, Angular, or Backbone, on the back end with Node.js or Java, or on mobile with react-native or Ionic.</p>
+						<p>Full stack developer with four years of experience working in an agile development model either on the front end with React, Angular, or Backbone or on the back end with Java or Node.js.</p>
 					</div>
 				</Section>
 				<Section header="Summary">
