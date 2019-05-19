@@ -1,169 +1,53 @@
-import React, {Component} from 'react';
+import React from 'react';
+
+import Page from './components/Page';
+import Section from './components/Section';
+import SectionRow from './components/SectionRow';
+import ExperienceContents from './components/ExperienceContents';
+
+const technicalExperience = require('./data/technicalExperience.json');
 
 const App = () => (
   <div class="container">
-			<div class="page">
-				<div class="section">
-					<div class="section-header">
-						<p>David Hasenjaeger</p>
-					</div>
+			<Page>
+				<Section header="David Hasenjaeger">
 					<div class="personal">
 						<p>davehasen@gmail.com</p>
 						<p>github.com/gerryfudd</p>
 						<p>www.linkedin.com/in/david-hasenjaeger</p>
 						<p>Full stack developer with three years of experience working in an agile development model either on the front end with React, Angular, or Backbone, on the back end with Node.js or Java, or on mobile with react-native or Ionic.</p>
 					</div>
-				</div>
-				<div class="section">
-					<div class="section-header">
-						<p>Summary</p>
-					</div>
-					<div class="section-row">
-						<div class="row-name">Methodologies</div>
-						<p>Agile</p>
-					</div>
-					<div class="section-row">
-						<div class="row-name">Front End Frameworks</div>
-						<p>Javascript, React, Backbone, Marionette.js, React-Native, jQuery, AngularJS, Angular2, Ionic2, Redux, Flux, html, CSS, SCSS</p>
-					</div>
-					<div class="section-row">
-						<div class="row-name">Server and Database Frameworks</div>
-						<p>Node.js, Serverless, Java, Spring, Hibernate, JavaServer Pages, Express, Hapi.js, DynamoDB, MongoDB, PostgreSQL, Knex.js</p>
-					</div>
-					<div class="section-row">
-						<div class="row-name">Testing Tools</div>
-						<p>Mocha, Chai, Sinon, Jasmine, Jest, JUnit, Mockito</p>
-					</div>
-					<div class="section-row">
-						<div class="row-name">Other tools</div>
-						<p>DataFlow, git, subversion, bash, Jira, Asana, Docker, Swagger</p>
-					</div>
-				</div>
-				<div class="section">
-					<div class="section-header">
-						<p>Technical Experience</p>
-					</div>
-					<div class="experience-row">
-						<p class="bold experience-name">Cayuse LLC</p>
-						<p>https://cayuse.com/</p>
-					</div>
-					<div class="experience-row">
-						<div class="bold name">Software Engineer</div>
-						<div class="bold">7/2017 - present</div>
-					</div>
-					<div class="experience-contents">
-						<div class="experience-description">
-							<li>Contributed to development of Spring based Java projects</li>
-							<li>Managed AWS environments for new microservices</li>
-							<li>Developed functional tests that became the blueprint for all web-driver based testing at Cayuse.</li>
-							<li>Created first Gatling.io based performance tests at Cayuse.</li>
-							<li>Mentored other developers in front end development within an MVC framework</li>
-							<li>Established coding standards for node based development</li>
-							<li>Practiced TDD principles in both Node and Java projects</li>
-							<li>Followed Agile principles</li>
-						</div>
-						<p class="project">
-							Worked on the team that maintained Cayuse's flagship 424 project 
-						</p>
-						<div class="used">
-							<p>Used: JavaServer Pages, Java, JUnit, Mockito, Gatling.io, Nightwatch.js, Javascript, jQuery, Hibernate, PostgreSQL, subversion, git, Jira, html, CSS</p>
-						</div>
-						<p class="project">
-							Worked on Spring Boot based microservices that interfaced with 424 and Grants.gov services.
-						</p>
-						<div class="used">
-							<p>Used: Spring Boot, Java, JUnit, Mockito, Gatling.io, Elasticsearch, Amazon SNS, Amazon SQS, Terraform, Bitbucket Pipelines, git, Jira</p>
-						</div>
-						<p class="project">
-							Lead overhaul of front end for the 424 product 
-						</p>
-						<div class="used">
-							<p>Used: JavaServer Pages, Java, Javascript, jQuery, subversion, Jira, html, CSS</p>
-						</div>
-						<p class="project">
-							Lead implementation of a saml based single sign on solution for Cayuse's legacy suite of products.
-						</p>
-						<div class="used">
-							<p>Used: Node.js, Serverless, git, bash, Jira, html, css, Mocha, Chai, Sinon</p>
-						</div>
-						<p class="project">
-							Lead implementation of a saml based single sign on solution for Cayuse's administrative suite of products.
-						</p>
-						<div class="used">
-							<p>Used: Node.js, Serverless, git, bash, Jira, html, css, Mocha, Chai, Sinon</p>
-						</div>
-						<p class="project">
-							Lead front end development for the team that maintained Cayuse's administrative console 
-						</p>
-						<div class="used">
-							<p>Used: Javascript, Backbone, Marionette, git, bash, Jira, html, SCSS</p>
-						</div>
-						<p class="project">
-							Worked with my development team on several of Cayuse's Spring framework based micro services
-						</p>
-						<div class="used">
-							<p>Used: Spring, Java, JUnit, Mockito, groovy, Hibernate, PostgreSQL, Swagger, git, bash, Jira</p>
-						</div>
-					</div>
-					<div class="experience-row">
-						<p class="bold experience-name">Wirestorm Technologies</p>
-						<p>https://www.wirestorm.us/</p>
-					</div>
-					<div class="experience-row">
-						<div class="bold name">Full Stack Javascript Developer</div>
-						<div class="bold">4/2015 - 7/2017</div>
-					</div>
-					<div class="experience-contents">
-						<div class="experience-description">
-							<li>Followed Agile principles</li>
-							<li>Created web and hybrid apps using modern frameworks</li>
-							<li>Used the MVC architectural pattern with appropriate frameworks</li>
-							<li>Assisted with work on servers when such work was done in house</li>
-						</div>
-						<p class="project">
-							Lead front end development on a project that connects people
-							seeking loans to verified lenders.
-						</p>
-						<div class="used">
-							<p>Used: Javascript, React, Redux, git, bash, Jira, html, SCSS, Jest</p>
-						</div>
-						<p class="project">
-							Worked on a hybrid mobile app to manage a user's
-							schedule and conduct VOIP calls
-						</p>
-						<div class="used">
-							<p>Used: Javascript, Ionic2, Angular2, Redux, Twilio, git, bash, Jira, html, SCSS</p>
-						</div>
-						<p class="project">
-							Worked on an app that stored payment information
-							and connected it to user accounts
-						</p>
-						<div class="used">
-							<p>Used: Javascript, React-Native, Redux, git, bash, Asana, html, SCSS</p>
-						</div>
-						<p class="project">
-							Worked on the server and front end for an app that
-							scheduled appointments and tracked capacity for
-							each type of appointment
-						</p>
-						<div class="used">
-							<p>Used: Javascript, Node.js, Swagger, PostgreSQL, React, Flux, git, bash, Asana, html, SCSS</p>
-						</div>
-						<p class="project">
-							Lead development on an app that included a calendar, a
-							messenger, and notifications
-						</p>
-						<div class="used">
-							<p>Used: Javascript, AngularJS, Ionic, Node.js, Socket.io, MongoDB, git, bash, Asana, html, SCSS</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="page">
-				<div class="section">
-					<div class="section-header">
-						<p>Education</p>
-					</div>
+				</Section>
+				<Section header="Summary">
+					<SectionRow
+						name="Methodologies"
+						body="Agile"
+					/>
+					<SectionRow
+						name="Front End Frameworks"
+						body="Javascript, React, Backbone, Marionette.js, React-Native, jQuery, AngularJS, Angular2, Ionic2, Redux, Flux, html, CSS, SCSS"
+					/>
+					<SectionRow
+						name="Server and Database Frameworks"
+						body="Node.js, Serverless, Java, Spring, Hibernate, JavaServer Pages, Express, Hapi.js, DynamoDB, MongoDB, Elasticsearch, PostgreSQL, Knex.js"
+					/>
+					<SectionRow
+						name="Testing Tools"
+						body="Mocha, Chai, Sinon, Jasmine, Jest, JUnit, Mockito, Nightwatch.js, Gatling.io"
+					/>
+					<SectionRow
+						name="Other tools"
+						body="DataFlow, git, subversion, bash, Jira, Terraform, Bitbucket Pipelines, Asana, Docker, Swagger"
+					/>
+				</Section>
+				<Section
+					header="Technical Experience"
+					data={[technicalExperience[0]]}
+				/>
+			</Page>
+			<Page>
+				<Section data={[technicalExperience[1]]}/>
+				<Section header="Education">
 					<div class="experience-row">
 						<p class="bold experience-name">Portland Code School</p>
 						<p>http://www.portlandcodeschool.com/</p>
@@ -172,16 +56,18 @@ const App = () => (
 						<div class="bold name">Javascript Full Stack Immersion</div>
 						<div class="bold">10/2014 - 4/2015</div>
 					</div>
-					<div class="experience-contents">
-						<div class="experience-description">
-							<li>Worked in teams to make programs with Javascript every day</li>
-							<li>Learned full stack Javascript as well as PostgreSQL and MongoDB database languages</li>
-							<li>Made a simple puzzle game in a team of two using AngularJs as a final project</li>
-						</div>
-						<div class="used">
-							<p>Used: Javascript, AngularJS, Node.js, Express, Socket.io, MongoDB, Knex.js, PostgreSQL, git, bash, html, CSS, Jasmine</p>
-						</div>
-					</div>
+					<ExperienceContents
+						description={[
+							'Worked in teams to make programs with Javascript every day',
+							'Learned full stack Javascript as well as PostgreSQL and MongoDB database languages',
+							'Made a simple puzzle game in a team of two using AngularJs as a final project'
+						]}
+						projects={[
+							{
+								techsUsed: 'Javascript, AngularJS, Node.js, Express, Socket.io, MongoDB, Knex.js, PostgreSQL, git, bash, html, CSS, Jasmine'
+							}
+						]}
+					/>
 					<div class="experience-row">
 						<p class="bold experience-name">Portland State University</p>
 					</div>
@@ -202,13 +88,8 @@ const App = () => (
 					<div class="experience-contents">
 						<p>Minor, Physics</p>
 					</div>
-				</div>
-			</div>
-			<div class="page">
-				<div class="section">
-					<div class="section-header">
-						<p>Other Experience</p>
-					</div>
+				</Section>
+				<Section header="Other Experience">
 					<div class="experience-row">
 						<div class="bold experienct-name">Portland CC</div>
 					</div>
@@ -251,11 +132,10 @@ const App = () => (
 							<li>Guided individual learning during small group work and in office hours</li>
 						</div>
 					</div>
-				</div>
-				<div class="section">
-					<div class="section-header">
-						<p>Personal or Volunteer Projects</p>
-					</div>
+				</Section>
+			</Page>
+			<Page>
+				<Section header="Personal or Volunteer Projects">
 					<div class="experience-row">
 						<p class="bold experience-name">Code For PDX</p>
 						<p class="bold">https://github.com/CodeForPortland/symptomsurvey_frontend/</p>
@@ -296,8 +176,8 @@ const App = () => (
 						<p>A calculator that I built to use Javascripts built in Math object to build a Polynomial object with methods for performing arithmetic on polynomials and finding complex number solutions for up to third order polynomials.</p>
 						<p>Used: Javascript, Node.js, git, bash, Jasmine (replaced with mocha), Mocha, Chai</p>
 					</div>
-				</div>
-			</div>
+				</Section>
+			</Page>
 		</div>
 );
 
