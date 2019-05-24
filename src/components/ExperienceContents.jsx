@@ -1,20 +1,23 @@
 import React from 'react';
 
-const ExperienceContents = ({description, projects}) => (
-  <div class="experience-contents">
-    <div class="experience-description">
+const ExperienceContents = ({description, projects, otherItems}) => (
+  <div className="experience-contents">
+    {description && <div className="experience-description">
       {description.map(item => <li key={item}>{item}</li>)}
-    </div>
-    {projects.map(project => (
-      <div key={project.name}>
-        <p class="project">
+    </div>}
+    {projects && projects.map(project => (
+      <div key={project.name || project.techsUsed}>
+        {project.name && <p className="project">
           {project.name}
-        </p>
-        <div class="used">
+        </p>}
+        {project.techsUsed && <div className="used">
           <p>Used: {project.techsUsed}</p>
-        </div>
+        </div>}
       </div>
     ))}
+    {otherItems && <div className="experience-description">
+      {otherItems.map(item => <p key={item}>{item}</p>)}
+    </div>}
   </div>
 );
 

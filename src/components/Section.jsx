@@ -5,24 +5,29 @@ import ExperienceContents from './ExperienceContents';
 const Section = ({header, data, children}) => (
   <div className="section">
     {header && 
-      <div class="section-header">
+      <div className="section-header">
         <p>{header}</p>
       </div>
     }
     {data && data.map(datum => (
-      <div>
-					<div class="experience-row">
-						<p class="bold experience-name">{datum.name}</p>
-						<p>{datum.url}</p>
+      <div key={datum.name}>
+					<div className="experience-row">
+						<p className="bold experience-name">{datum.name}</p>
+						{datum.url && <p>{datum.url}</p>}
 					</div>
-					<div class="experience-row">
-						<div class="bold name">{datum.title}</div>
-						<div class="bold">{datum.dates}</div>
+          {datum.overflowUrls && datum.overflowUrls.map(url => (
+            <div key={url} className="experience-row">
+              <p className="bold experience-name"></p>
+              <p>{url}</p>
+            </div>
+          ))}
+					<div className="experience-row">
+						<div className="bold name">{datum.title}</div>
+						<div className="bold">{datum.dates}</div>
 					</div>
-					<ExperienceContents
-						description={datum.experienceContents.description}
-						projects={datum.experienceContents.projects}
-					/>
+					{datum.experienceContents && <ExperienceContents
+						{...datum.experienceContents}
+					/>}
       </div>
     ))}
     {children}

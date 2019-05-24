@@ -4,7 +4,7 @@ import Section from './Section';
 
 const Profile = ({name, email, portfolio, url, briefMessage}) => (
   <Section header={name}>
-    <div class="personal">
+    <div className="personal">
       <p>{email}</p>
       <p>{portfolio}</p>
       <p>{url}</p>
