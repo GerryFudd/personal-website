@@ -1,44 +1,28 @@
 import React from 'react';
+import converter from 'number-to-words';
 
 import Page from './components/Page';
 import Section from './components/Section';
+import Profile from './components/Profile';
 import SectionRow from './components/SectionRow';
 import ExperienceContents from './components/ExperienceContents';
 
 const technicalExperience = require('./data/technicalExperience.json');
+const profile = require('./data/profile.json');
+const summary = require('./data/summary.json');
 
 const App = () => (
   <div class="container">
 			<Page>
-				<Section header="David Hasenjaeger">
-					<div class="personal">
-						<p>davehasen@gmail.com</p>
-						<p>github.com/gerryfudd</p>
-						<p>www.linkedin.com/in/david-hasenjaeger</p>
-						<p>Full stack developer with four years of experience working in an agile development model either on the front end with React, Angular, or Backbone or on the back end with Java or Node.js.</p>
-					</div>
-				</Section>
+				<Profile
+					{...profile}
+					briefMessage={profile.briefMessage.replace('{}', converter.toWords(new Date(Date.now() - 1430377200000).getFullYear() - 1970))}
+				/>
 				<Section header="Summary">
-					<SectionRow
-						name="Methodologies"
-						body="Agile"
-					/>
-					<SectionRow
-						name="Front End Frameworks"
-						body="Javascript, React, Backbone, Marionette.js, React-Native, jQuery, AngularJS, Angular2, Ionic2, Redux, Flux, html, CSS, SCSS"
-					/>
-					<SectionRow
-						name="Server and Database Frameworks"
-						body="Node.js, Serverless, Java, Spring, Hibernate, JavaServer Pages, Express, Hapi.js, DynamoDB, MongoDB, Elasticsearch, PostgreSQL, Knex.js"
-					/>
-					<SectionRow
-						name="Testing Tools"
-						body="Mocha, Chai, Sinon, Jasmine, Jest, JUnit, Mockito, Nightwatch.js, Gatling.io"
-					/>
-					<SectionRow
-						name="Other tools"
-						body="DataFlow, git, subversion, bash, Jira, Terraform, Bitbucket Pipelines, Asana, Docker, Swagger"
-					/>
+					{summary.map(({name, body}) => (<SectionRow key={name}
+						name={name}
+						body={body}
+					/>))}
 				</Section>
 				<Section
 					header="Technical Experience"

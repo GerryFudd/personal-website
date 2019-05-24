@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Methodologies",
+    "body": "Agile"
+  },
+  {
+    "name": "Front End Frameworks",
+    "body": "Javascript, React, Backbone, Marionette.js, React-Native, jQuery, AngularJS, Angular2, Ionic2, Redux, Flux, html, CSS, SCSS"
+  },
+  {
+    "name": "Server and Database Frameworks",
+    "body": "Node.js, Serverless, Java, Spring, Hibernate, JavaServer Pages, Express, Hapi.js, DynamoDB, MongoDB, Elasticsearch, PostgreSQL, Knex.js"
+  },
+  {
+    "name": "Testing Tools",
+    "body": "Mocha, Chai, Sinon, Jasmine, Jest, JUnit, Mockito, Nightwatch.js, Gatling.io"
+  },
+  {
+    "name": "Other tools",
+    "body": "DataFlow, git, subversion, bash, Jira, Terraform, Bitbucket Pipelines, Asana, Docker, Swagger"
+  }
+]
