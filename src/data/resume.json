@@ -1,0 +1,320 @@
+{
+  "name": "David Hasenjaeger",
+  "email": "davehasen@gmail.com",
+  "portfolio": "github.com/gerryfudd",
+  "url": "www.linkedin.com/in/david-hasenjaeger",
+  "careerStartDate": 1430377200,
+  "briefMessage": "Full stack developer with {} years of experience working in an agile development model either on the front end with React, Angular, or Backbone or on the back end with Java or Node.js.",
+  "summary": [
+    {
+      "name": "Methodologies",
+      "body": "Agile"
+    },
+    {
+      "name": "Front End Frameworks",
+      "body": "Javascript, React, Backbone, Marionette.js, React-Native, jQuery, AngularJS, Angular2, Ionic2, Redux, Flux, html, CSS, SCSS"
+    },
+    {
+      "name": "Server and Database Frameworks",
+      "body": "Node.js, Serverless, Java, Spring, Hibernate, JavaServer Pages, Express, Hapi.js, DynamoDB, MongoDB, Elasticsearch, PostgreSQL, Knex.js"
+    },
+    {
+      "name": "Testing Tools",
+      "body": "Mocha, Chai, Sinon, Jasmine, Jest, JUnit, Mockito, Nightwatch.js, Gatling.io"
+    },
+    {
+      "name": "Other tools",
+      "body": "DataFlow, git, subversion, bash, Jira, Terraform, Bitbucket Pipelines, Asana, Docker, Swagger"
+    }
+  ],
+  "education": [
+    {
+      "name": "Portland Code School",
+      "title": "Javascript Full Stack Immersion",
+      "dates": "10/2014 - 4/2015",
+      "urls": [
+        {
+          "url": "http://www.portlandcodeschool.com/"
+        }
+      ],
+      "projects": [
+        {
+          "name": "",
+          "techsUsed": "Javascript, AngularJS, Node.js, Express, Socket.io, MongoDB, Knex.js, PostgreSQL, git, bash, html, CSS, Jasmine"
+        }
+      ],
+      "description": [
+        {
+          "body": "Worked in teams to make programs with Javascript every day"
+        },
+        {
+          "body": "Learned full stack Javascript as well as PostgreSQL and MongoDB database languages"
+        },
+        {
+          "body": "Made a simple puzzle game in a team of two using AngularJs as a final project"
+        }
+      ],
+      "otherItems": []
+    },
+    {
+      "name": "Portland State University",
+      "title": "MS Mathematics",
+      "dates": "03/2009 - 06/2011",
+      "urls": [],
+      "projects": [],
+      "description": [],
+      "otherItems": [
+        {
+          "body": "Awarded FS Cater Prize in 2011"
+        }
+      ]
+    },
+    {
+      "name": "Oregon State University",
+      "title": "Bachelor of Science, Mathematics",
+      "dates": "09/2003 - 12/2008",
+      "urls": [],
+      "projects": [],
+      "description": [],
+      "otherItems": [
+        {
+          "body": "Minor, Physics"
+        }
+      ]
+    }
+  ],
+  "otherExperience": [
+    {
+      "name": "Portland CC",
+      "title": "Mathematics Instructor",
+      "dates": "09/2013 - 04/2015",
+      "urls": [],
+      "projects": [],
+      "description": [
+        {
+          "body": "Wrote all handouts including pdfs of lecture notes"
+        },
+        {
+          "body": "Lectured daily from the notes that I created"
+        },
+        {
+          "body": "Created course materials with technical formatting and diagrams"
+        }
+      ],
+      "otherItems": []
+    },
+    {
+      "name": "Mt. Hood CC",
+      "title": "Mathematics Instructor",
+      "dates": "01/2012 - 08/2014",
+      "urls": [],
+      "projects": [],
+      "description": [
+        {
+          "body": "Advised full time faculty on course content"
+        },
+        {
+          "body": "Adapted curriculum to emphasize analytical skills"
+        }
+      ],
+      "otherItems": []
+    },
+    {
+      "name": "Portland State University",
+      "title": "Mathematics Instructor",
+      "dates": "09/2010 - 12/2011",
+      "urls": [],
+      "projects": [],
+      "description": [
+        {
+          "body": "Earned an MS in mathematics while teaching"
+        },
+        {
+          "body": "Recognized as top mathematics student in 2011"
+        },
+        {
+          "body": "Facilitated classroom discussions"
+        },
+        {
+          "body": "Guided individual learning during small group work and in office hours"
+        }
+      ],
+      "otherItems": []
+    }
+  ],
+  "personalProjects": [
+    {
+      "name": "Code For PDX",
+      "title": "An app for use by Clackamas County to monitor public health",
+      "dates": "10/2018-present",
+      "urls": [
+        {
+          "url": "https://github.com/CodeForPortland/symptomsurvey_frontend/"
+        },
+        {
+          "url": "https://github.com/CodeForPortland/symptomsurvey_backend/"
+        }
+      ],
+      "projects": [
+        {
+          "name": "An app that will be used by Clackamas County for monitoring public health. It scrapes social media and identifies areas with high insidences of symptoms of Hepatitis A",
+          "techsUsed": "Javascript, Node.js, React, glamorous, webpack, git, bash"
+        }
+      ],
+      "description": [],
+      "otherItems": []
+    },
+    {
+      "name": "Color Wheel Graph",
+      "title": "React app to graph complex functions using domain coloring",
+      "dates": "07/2018",
+      "urls": [
+        {
+          "url": "https://github.com/GerryFudd/graph-tool"
+        }
+      ],
+      "projects": [
+        {
+          "name": "A front end that leverages the Calculator App to graph complex functions. This was an app that I used as a visual aid during a talk on Taylor Series where I displayed the graphs of complex functions and their Taylor series using color wheel graphs (https://en.wikipedia.org/wiki/Domain_coloring).",
+          "techsUsed": "Javascript, Node.js, React, webpack, git, bash"
+        }
+      ],
+      "description": [],
+      "otherItems": []
+    },
+    {
+      "name": "Calculator App",
+      "title": "Node.js program that can solve complex polynomial equations",
+      "dates": "02/2015 - 03/2015 && 07/2018",
+      "urls": [
+        {
+          "url": "https://github.com/GerryFudd/calculator"
+        }
+      ],
+      "projects": [
+        {
+          "name": "A calculator that I built to use Javascripts built in Math object to build a Polynomial object with methods for performing arithmetic on polynomials and finding complex number solutions for up to third order polynomials.",
+          "techsUsed": "Javascript, Node.js, git, bash, Jasmine (replaced with mocha), Mocha, Chai"
+        }
+      ],
+      "description": [],
+      "otherItems": []
+    }
+  ],
+  "technicalExperience": [
+    {
+      "name": "Cayuse LLC",
+      "title": "Software Engineer",
+      "dates": "7/2017 - present",
+      "urls": [
+        {
+          "url": "https://cayuse.com/"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Worked on the team that maintained Cayuse's flagship 424 project ",
+          "techsUsed": "JavaServer Pages, Java, JUnit, Mockito, Gatling.io, Nightwatch.js, Javascript, jQuery, Hibernate, PostgreSQL, subversion, git, Jira, html, CSS"
+        },
+        {
+          "name": "Worked on Spring Boot based microservices that interfaced with 424 and Grants.gov services.",
+          "techsUsed": "Spring Boot, Java, JUnit, Mockito, Gatling.io, Elasticsearch, Amazon SNS, Amazon SQS, Terraform, Bitbucket Pipelines, git, Jira"
+        },
+        {
+          "name": "Lead overhaul of front end for the 424 product ",
+          "techsUsed": "JavaServer Pages, Java, Javascript, jQuery, subversion, Jira, html, CSS"
+        },
+        {
+          "name": "Lead implementation of a saml based single sign on solution for Cayuse's legacy suite of products.",
+          "techsUsed": "Node.js, Serverless, git, bash, Jira, html, css, Mocha, Chai, Sinon"
+        },
+        {
+          "name": "Lead implementation of a saml based single sign on solution for Cayuse's administrative suite of products.",
+          "techsUsed": "Node.js, Serverless, git, bash, Jira, html, css, Mocha, Chai, Sinon"
+        },
+        {
+          "name": "Lead front end development for the team that maintained Cayuse's administrative console ",
+          "techsUsed": "Javascript, Backbone, Marionette, git, bash, Jira, html, SCSS"
+        },
+        {
+          "name": "Worked with my development team on several of Cayuse's Spring framework based micro services",
+          "techsUsed": "Spring, Java, JUnit, Mockito, groovy, Hibernate, PostgreSQL, Swagger, git, bash, Jira"
+        }
+      ],
+      "description": [
+        {
+          "body": "Contributed to development of Spring based Java projects"
+        },
+        {
+          "body": "Managed AWS environments for new microservices"
+        },
+        {
+          "body": "Developed functional tests that became the blueprint for all web-driver based testing at Cayuse."
+        },
+        {
+          "body": "Created first Gatling.io based performance tests at Cayuse."
+        },
+        {
+          "body": "Mentored other developers in front end development within an MVC framework"
+        },
+        {
+          "body": "Established coding standards for node based development"
+        },
+        {
+          "body": "Practiced TDD principles in both Node and Java projects"
+        },
+        {
+          "body": "Followed Agile principles"
+        }
+      ],
+      "otherItems": []
+    },
+    {
+      "name": "Wirestorm Technologies",
+      "title": "Full Stack Javascript Developer",
+      "dates": "4/2015 - 7/2017",
+      "urls": [
+        {
+          "url": "https://www.wirestorm.us/"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Lead front end development on a project that connects people seeking loans to verified lenders.",
+          "techsUsed": "Javascript, React, Redux, git, bash, Jira, html, SCSS, Jest"
+        },
+        {
+          "name": "Worked on a hybrid mobile app to manage a user's schedule and conduct VOIP calls",
+          "techsUsed": "Javascript, Ionic2, Angular2, Redux, Twilio, git, bash, Jira, html, SCSS"
+        },
+        {
+          "name": "Worked on an app that stored payment information and connected it to user accounts",
+          "techsUsed": "Javascript, React-Native, Redux, git, bash, Asana, html, SCSS"
+        },
+        {
+          "name": "Worked on the server and front end for an app that scheduled appointments and tracked capacity for each type of appointment",
+          "techsUsed": "Javascript, Node.js, Swagger, PostgreSQL, React, Flux, git, bash, Asana, html, SCSS"
+        },
+        {
+          "name": "Lead development on an app that included a calendar, a messenger, and notifications",
+          "techsUsed": "Javascript, AngularJS, Ionic, Node.js, Socket.io, MongoDB, git, bash, Asana, html, SCSS"
+        }
+      ],
+      "description": [
+        {
+          "body": "Followed Agile principles"
+        },
+        {
+          "body": "Created web and hybrid apps using modern frameworks"
+        },
+        {
+          "body": "Used the MVC architectural pattern with appropriate frameworks"
+        },
+        {
+          "body": "Assisted with work on servers when such work was done in house"
+        }
+      ],
+      "otherItems": []
+    }
+  ]
+}
