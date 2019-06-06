@@ -1,10 +1,10 @@
 import React from 'react';
 import converter from 'number-to-words';
 
-import Page from './components/Page';
-import Section from './components/Section';
-import Profile from './components/Profile';
-import Summary from './components/Summary';
+import Page from './Page';
+import Section from './Section';
+import Profile from './Profile';
+import Summary from './Summary';
 
 const Resume = ({
 	summary, technicalExperience, education, otherExperience, personalProjects,

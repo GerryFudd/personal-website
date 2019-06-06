@@ -1,28 +1,14 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import React from 'react';
+import {Router, Route, Link} from 'react-router-dom';
 
-import {get} from './redux/resume/actionCreators';
-import Resume from './Resume';
+import ResumePage from './pages/ResumePage';
+const HomePage = () => (<div>Hello, world.<Link to="resume">Resume</Link></div>);
 
-const resume = require('./data/resume.json');
-
-class AppComponent extends Component {
-	componentWillMount() {
-		this.props.get();
-	}
-	render() {
-		const {data} = this.props;
-		if (data) {
-			return <Resume {...data}/>
-		}
-
-		return <p>Loading. Please wait.</p>
-	}
-}
-
-const App = connect(
-	({resume: {data}}) => ({data}),
-	{get}
-)(AppComponent);
+const App = ({history}) => (
+	<Router history={history}>
+		<Route exact path="/" component={HomePage}/>
+		<Route path="/resume" component={ResumePage} />
+	</Router>
+);
 
 export default App;

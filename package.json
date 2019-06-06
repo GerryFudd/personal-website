@@ -22,11 +22,16 @@
     "@babel/preset-react": "^7.0.0",
     "axios": "^0.19.0",
     "babel-loader": "^8.0.6",
+    "history": "^4.9.0",
+    "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.11",
     "number-to-words": "^1.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-router-redux": "^4.0.8",
     "redux": "^4.0.1",
     "redux-axios-middleware": "^4.0.0",
     "webpack": "^4.31.0",
@@ -35,6 +40,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "react-hot-loader": "^4.9.0"
   }
 }
