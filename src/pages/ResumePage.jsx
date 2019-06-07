@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
-import {get} from '../redux/resume/actionCreators';
 import Resume from '../components/Resume';
+import {get} from '../redux/resume/actionCreators';
 
 class ResumePageComponent extends Component {
 	componentWillMount() {
@@ -18,9 +19,8 @@ class ResumePageComponent extends Component {
 	}
 }
 
-const ResumePage = connect(
-	({resume: {data}}) => ({data}),
-	{get}
+export default connect(
+	({resume}) => ({name: resume.data}),
+	dispatch => ({get: bindActionCreators(get, dispatch)})
 )(ResumePageComponent);
 
-export default ResumePage;
