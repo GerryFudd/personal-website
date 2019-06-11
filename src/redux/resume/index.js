@@ -1,6 +1,8 @@
 import actionTypes from './actionTypes';
 const {GET, GET_SUCCESS, GET_FAIL} = actionTypes;
 
+const resumeData = require('../../data/resume.json');
+
 const resumeReducer = (state = {}, action) => {
   const result = {...state};
   switch(action.type) {
@@ -13,7 +15,8 @@ const resumeReducer = (state = {}, action) => {
       result.data = action.payload.data;
       return result;
     case GET_FAIL:
-      delete result.data;
+      // TODO: remove this before going into production.
+      result.data = resumeData;
       result.error = action.payload;
       return result;
     default:
