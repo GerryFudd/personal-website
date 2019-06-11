@@ -6,11 +6,98 @@ import Section from './Section';
 import Profile from './Profile';
 import Summary from './Summary';
 
+import styled from 'styled-components';
+
+const StyledResume = styled.div`
+width: 8.5in;
+padding: 0.5in 0 0.5in 0.5in;
+
+p {
+  margin: 0;
+}
+
+* {
+  font-family: PT Sans;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.project {
+  font-weight: 600;
+}
+
+.section {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: stretch;
+  width: 7.5in;
+  flex-direction: column;
+}
+
+.page {
+  height: 12in;
+}
+
+.section-header {
+  border-bottom: 2px solid #ccc;
+	p {
+		font-size: 18px;
+		font-weight: 800;
+		font-family: Open Sans;
+	}
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+	padding-bottom: 5px;
+	
+	p {
+		display: flex;
+		flex: 3;
+	}
+}
+
+.row-name {
+  flex: 1;
+}
+
+.experience-name {
+  font-size: 16px;
+}
+
+.experience-row {
+  display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	
+	p:first-of-type {
+		max-width: 60%;
+	}
+}
+
+.experience-description {
+  padding-left: .1in;
+}
+
+.used {
+  padding-left: .1in;
+}
+
+.experience-contents {
+  padding: 0 0 10px .25in;
+}
+`;
+
 const Resume = ({
 	summary, technicalExperience, education, otherExperience, personalProjects,
 	...profile
 }) => (
-  <div className="container">
+  <StyledResume>
 			<Page>
 				<Profile
 					{...profile}
@@ -39,7 +126,7 @@ const Resume = ({
 					data={personalProjects}
 				/>
 			</Page>
-		</div>
+		</StyledResume>
 );
 
 export default Resume;

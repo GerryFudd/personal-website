@@ -27,6 +27,7 @@
     "lodash": "^4.17.11",
     "number-to-words": "^1.2.4",
     "react": "^16.8.6",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.8.6",
     "react-redux": "^6.0.0",
     "react-router": "^5.0.1",
@@ -35,6 +36,7 @@
     "redux": "^4.0.1",
     "redux-axios-middleware": "^4.0.0",
     "redux-immutable-state-invariant": "^2.1.0",
+    "styled-components": "^4.3.1",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1"

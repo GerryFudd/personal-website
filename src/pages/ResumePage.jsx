@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import styled from 'styled-components';
+
+const CenteredView = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex: 1;
+`;
 
 import Resume from '../components/Resume';
 import {get} from '../redux/resume/actionCreators';
@@ -15,12 +23,12 @@ class ResumePageComponent extends Component {
 			return <Resume {...data}/>
 		}
 
-		return <p>Loading. Please wait.</p>
+		return <CenteredView><p className="centered">Loading. Please wait.</p></CenteredView>
 	}
 }
 
 export default connect(
-	({resume}) => ({name: resume.data}),
+	({resume}) => ({data: resume.data}),
 	dispatch => ({get: bindActionCreators(get, dispatch)})
 )(ResumePageComponent);
 
