@@ -1,5 +1,7 @@
 import React from 'react';
-import Grid from 'react-bootstrap/lib/Grid';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {push} from 'connected-react-router';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import styled from 'styled-components';
@@ -10,17 +12,11 @@ import landscape  from '../resources/landscape.jpg';
 import {
   backgroundOfColorAndImage, transparentDark, transparentRed, transparentGrey
 } from '../layout/snippets';
+import StyledGrid from '../components/StyledGrid';
 
 const StyledHomePage = styled.div`
 flex: 1;
-
-.tile {
-  height: 300px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+padding-bottom: 140px;
 
 .portfolio {
   background: ${backgroundOfColorAndImage(transparentDark, keyboard)};
@@ -30,37 +26,23 @@ flex: 1;
   background: ${backgroundOfColorAndImage(transparentRed, mudboneGrownGroupPhoto)};
 }
 
-p.blurb {
-  color: #fff;
-  font-size: 20px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
-}
-
 .title-box {
-  padding: 120px 0;
-  margin-top: -20px;
+  padding: 150px 0;
+  margin: 0;
   background: ${backgroundOfColorAndImage(transparentGrey, landscape)};
 }
-
-.title {
-  font-size: 30px;
-}
-
-.sub-title {
-  font-size: 20px;
-}
 `;
-const HomePage = () => (<StyledHomePage>
+const HomePage = ({push}) => (<StyledHomePage>
   <div className="title-box">
       <p className="centered title">Sofware engineer in Portland, Oregon.</p>
-      <p className="centered sub-title">I care about things.</p>
-    </div>
-  <Grid>
+      <p className="centered sub-title">I am not a designer.</p>
+  </div>
+  <StyledGrid>
   <Row>
-    <Col xs={12} sm={6}><div className="tile portfolio"><p className="centered blurb">Portfolio</p></div></Col>
+    <Col xs={12} sm={6} onClick={() => push('/portfolio')}><div className="tile portfolio"><p className="centered blurb">Portfolio</p></div></Col>
     <Col xs={12} sm={6}><div className="tile extra-curriculars"><p className="centered blurb">Extra Curriculars</p></div></Col>
   </Row>
-  </Grid>
+  </StyledGrid>
 </StyledHomePage>);
 
-export default HomePage;
+export default connect(()=> ({}), dispatch => ({push: bindActionCreators(push, dispatch)}))(HomePage);

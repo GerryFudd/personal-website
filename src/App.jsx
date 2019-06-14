@@ -1,25 +1,26 @@
 import React from 'react';
-import {Router, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
-import { syncHistoryWithStore } from 'react-router-redux';
-import store from './redux';
+import { ConnectedRouter } from 'connected-react-router'
+import storeProvider from './redux';
 
 import Container from './layout/Container';
 import ResumePage from './pages/ResumePage';
 import HomePage from './pages/HomePage';
+import PortfolioPage from './pages/PortfolioPage';
 
-const browserHistory = createBrowserHistory();
-const history = syncHistoryWithStore(browserHistory, store);
+const history = createBrowserHistory();
 
 const App = () => (
-	<Provider store={store}>
-		<Router history={history}>
+	<Provider store={storeProvider(history)}>
+		<ConnectedRouter history={history}>
 			<Container>
 				<Route exact path='/' component={HomePage}/>
 				<Route path='/resume' component={ResumePage}/>
+				<Route path='/portfolio' component={PortfolioPage}/>
 			</Container>
-		</Router>
+		</ConnectedRouter>
   </Provider>
 );
 

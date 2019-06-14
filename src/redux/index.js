@@ -1,7 +1,7 @@
 import {createStore, applyMiddleware, combineReducers, compose} from 'redux';
 import axios from 'axios';
 import axiosMiddleware from 'redux-axios-middleware';
-import { routerReducer as routing } from 'react-router-redux';
+import { connectRouter, routerMiddleware } from 'connected-react-router';
 import resume from './resume';
 import invariant from 'redux-immutable-state-invariant';
 
@@ -12,9 +12,10 @@ const client = axios.create({
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line
 
-export default createStore(
-  combineReducers({resume, routing}),
+export default history => createStore(
+  combineReducers({resume, router: connectRouter(history)}),
   composeEnhancers(applyMiddleware(
+    routerMiddleware(history),
     axiosMiddleware(client),
     invariant()
   ))

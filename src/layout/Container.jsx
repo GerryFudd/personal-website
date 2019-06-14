@@ -9,8 +9,20 @@ const StyledContainer = styled.div`
 display: flex;
 flex-direction: column;
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .centered {
   text-align: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.sub-title {
+  font-size: 20px;
 }
 `;
 const Container = ({children}) => (
@@ -22,6 +34,9 @@ const Container = ({children}) => (
     <Nav>
       <NavItem eventKey={0} href={'/resume'}>
         Resume
+      </NavItem>
+      <NavItem eventKey={0} href={'/portfolio'}>
+        Portfolio
       </NavItem>
     </Nav>
   </Navbar>
