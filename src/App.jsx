@@ -9,6 +9,7 @@ import Container from './layout/Container';
 import ResumePage from './pages/ResumePage';
 import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
+import ColorWheelGraphPage from './pages/ColorWheelGraphPage';
 
 const history = createBrowserHistory();
 
@@ -19,6 +20,7 @@ const App = () => (
 				<Route exact path='/' component={HomePage}/>
 				<Route path='/resume' component={ResumePage}/>
 				<Route path='/portfolio' component={PortfolioPage}/>
+				<Route path='/color-wheel-graph' component={ColorWheelGraphPage}/>
 			</Container>
 		</ConnectedRouter>
   </Provider>
