@@ -1,5 +1,5 @@
 import React from 'react';
-import Graph from 'color-wheel-graph/lib/Graph';
+import {Graph} from 'color-wheel-graph';
 import styled from 'styled-components';
 
 const StyledCWGPage = styled.div`
