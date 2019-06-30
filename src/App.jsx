@@ -2,7 +2,9 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
-import { ConnectedRouter } from 'connected-react-router'
+import { ConnectedRouter } from 'connected-react-router';
+
+
 import storeProvider from './redux';
 
 import Container from './layout/Container';

@@ -1,6 +1,7 @@
 import 'react-hot-loader';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MathJax from 'react-mathjax';
 
 import App from './App';
 

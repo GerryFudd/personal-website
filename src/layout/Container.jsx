@@ -9,6 +9,21 @@ const StyledContainer = styled.div`
 display: flex;
 flex-direction: column;
 
+.space-right {
+  margin-right: 5px!important;
+}
+
+li, p {
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 20px;
+  margin-bottom: 20px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
 .navbar {
   margin-bottom: 0;
 }
