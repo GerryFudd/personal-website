@@ -7,6 +7,10 @@ const CollapsibleParagraphContainer = styled.div`
 display: flex;
 flex-direction: column;
 
+&.with-separator {
+  border-bottom: 8px solid rgba(0, 0, 0, 0.15);
+}
+
 .icon-header {
   display: flex;
   flex-direction: row;
@@ -38,6 +42,10 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  .centered {
+    align-self: center;
+  }
 }
 `;
 
@@ -56,9 +64,9 @@ class CollapsibleParagraph extends Component {
 
   render() {
     const {collapsed} = this.state;
-    const {children, headerElement, headerType} = this.props;
+    const {children, headerElement, headerType, separated} = this.props;
 
-    return (<CollapsibleParagraphContainer>
+    return (<CollapsibleParagraphContainer className={separated ? 'with-separator': ''}>
     <div className="icon-header">
       {collapsed
         ? <FontAwesomeIcon onClick={() => this.toggle(false)} className={headerType} icon={faAngleRight}/>
