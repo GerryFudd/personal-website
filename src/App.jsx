@@ -3,6 +3,7 @@ import {Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
 import { ConnectedRouter } from 'connected-react-router';
+import Tooltip from 'react-tooltip';
 
 
 import storeProvider from './redux';
@@ -23,6 +24,7 @@ const App = () => (
 				<Route path='/resume' component={ResumePage}/>
 				<Route path='/portfolio' component={PortfolioPage}/>
 				<Route path='/color-wheel-graph' component={ColorWheelGraphPage}/>
+				<Tooltip/>
 			</Container>
 		</ConnectedRouter>
   </Provider>

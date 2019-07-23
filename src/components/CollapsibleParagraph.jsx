@@ -54,7 +54,7 @@ class CollapsibleParagraph extends Component {
     super(props);
 
     const {collapsed} = props;
-    this.state = {collapsed: collapsed === undefined ? true : collapsed};
+    this.state = {collapsed};
     this.toggle = this.toggle.bind(this);
   }
 
